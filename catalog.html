@@ -83,19 +83,35 @@
   </nav>
   <main>
     <h1>Сливочное мороженое</h1>
-    <section>
-      <ul>
-        <li>Наполнители:</li>
-        <ul>
-          <li><a href="#">Шоколадные</a></li>
-          <li><a href="#">Сахарные присыпки</a></li>
-          <li><a href="#">Фрукты</a></li>
-          <li><a href="#">Сиропы</a></li>
-          <li><a href="#">Джемы</a></li>
-        </ul>
-      </ul>
-      <a href="#">Применить</a>
-    </section>
+    <form action="https://echo.htmlacademy.ru/" method="post">
+      <label for="sort">Сортировка:</label>
+      <select name="sort" id="sort">
+        <option>По популярности</option>
+      </select>
+      <label for="price">Цена: 100-500 руб.</label>
+      <input type="range" name="price" id="price">
+      <p>Жирность:</p>
+      <input type="radio" name="fatness" id="0%" id="fatness" value="0%">
+      <label for="0">0%</label>
+      <input type="radio" name="fatness" id="to10" value="До 10%">
+      <label for="to10">До 10%</label>
+      <input type="radio" name="fatness" id="to30" value="До 30%">
+      <label for="to10">До 10%</label>
+      <input type="radio" name="fatness" id="over30" value="Выше 30%">
+      <label for="over30">Выше 30%</label>
+      <p>Наполнители:</p>
+      <input type="checkbox" name="choc" id="choc" checked>
+      <label for="choc">Шоколадные</label>
+      <input type="checkbox" name="sugar" id="sugar" checked>
+      <label for="sugar">Сахарные присыпки</label>
+      <input type="checkbox" name="fruits" id="fruits">
+      <label for="fruits">Фрукты</label>
+      <input type="checkbox" name="syrop" id="syrop">
+      <label for="syrop">Сиропы</label>
+      <input type="checkbox" name="jams" id="jams">
+      <label for="jams">Джемы</label>
+      <button type="submit">Применить</button>
+  </form>
     <section>
       <ul>
         <li>
