@@ -1,2 +1,233 @@
 body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+
+
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.inner-page {
+
+  background-color: skyblue;
+  background-image: url("../img/background.png");
+}
+
+/* Header */
+
+.header {}
+
+/* Menu */
+
+
+.header-link {
+  color: #ffffff;
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: white;
+
+}
+
+.catalog-link:hover,
+.catalog-link:focus {
+  color: #000000;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+
+
+/* ADD-Menu */
+.new {
+  color: black;
+  font-weight: bold;
+  border-bottom: 1px solid #000000;
+
+}
+
+.add-menu {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+.add-link {
+  color: black;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.add-menu li:hover,
+.add-menu li:focus {
+  background-color: #fbded8;
+}
+
+.header-icons {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+
+/*  Advantages Glaccy   */
+
+
+.advantages {
+  background-color: #fbded8;
+  background-image: url("../img/waffle.png");
+}
+
+.advantages p {
+  color: #323232;
+  font-size: 24px;
+  font-weight: medium;
+}
+
+.advantages li {
+  color: #323232;
+  font-weight: 400;
+  font-size: 14px;
+
+}
+
+/* Секция с клубничами */
+
+
+.blog {
+  background-image: url("../img/fruits.png");
+  background-repeat: no-repeat;
+
+}
+
+.blog h3 {
+  color: #323232;
+  font-size: 16px;
+  font-weight: medium;
+}
+
+.blog a {
+  color: #323232;
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* SUBSCRIPRION */
+
+
+.subscription {
+  color: #ffffff;
+  background-image: url("../img/whiteback.png");
+}
+
+.subscription p {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+
+}
+
+
+
+/*                            CATALOG                    */
+
+
+/* Header */
+.nav-catalog a {
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.nav-catalog .catalog-active {
+  background-color: #d07058;
+  text-decoration: none;
+}
+
+/* Icons */
+
+.catalog-icons {
+  color: #ffffff;
+  background-color: #b0c0b7;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.active-icon {
+  color: #000000;
+  background-color: #ffffff;
+  font-size: 14px;
+  font-weight: medium;
+}
+
+.basket {
+  background-color: #ffffff;
+}
+
+.price {
+  border-top: 1px solid black;
+}
+
+.button {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #e84d36;
+}
+
+
+
+/*     SORT */
+.transition a {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+
+.transition .unactive {
+  font-size: 14px;
+  font-weight: 400;
+  color: #ffffff;
+
+}
+
+.heading {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+
+
+
+/* Ice Cream List */
+.ice-cream-list a {
+  font-size: 16px;
+  font-weight: medium;
+  color: #ffffff;
+  text-decoration: underline;
+
+
+}
+
+.ice-cream-list b {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.ice-cream-list span {
+  color: #ffffff;
+  font-size: 0.5em;
+  font-weight: bold;
 }

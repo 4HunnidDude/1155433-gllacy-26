@@ -4,80 +4,85 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Глейси</title>
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap&subset=cyrillic" rel="stylesheet">
 </head>
 
-<body>
-  <header>
+<body class="inner-page">
+  <header class="catalog-header">
     <a href="index.html">
       <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Glacy">
     </a>
-    <nav>
+    <nav class="nav-catalog">
       <ul>
-        <li><a href="#">Каталог</a></li>
+        <li><a class="catalog-active" href="#">Каталог</a></li>
         <li><a href="#">Доставка и оплата</a></li>
         <li><a href="#">О Компании</a></li>
       </ul>
     </nav>
-    <ul>
-      <li><a href="#">Поиск</a></li>
-      <li><a href="#">Вход</a></li>
-      <li><a href="#">2 товара</a></li>
-      <table>
-        <tr>
-          <td>
-            <a href="#">X</a>
-          </td>
-          <td>
-            <img src="img/ice-cream/orangejam.png" width="30" height="30" alt="мороженое">
-          </td>
-          <td>
-            Пломбир с апельсиновым джемом
-          </td>
-          <td>
-            1.5кг x 200руб
-          </td>
-          <td>
-            300руб
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <a href="#">X</a>
-          </td>
-          <td>
-            <img src="img/ice-cream/whitechoc.png" width="30" height="30" alt="мороженое">
-          </td>
-          <td>
-            Клубничный пломбир с присыпкой из белого шоколада
-          </td>
-          <td>
-            1.5кг x 300руб
-          </td>
-          <td>
-            450руб
-          </td>
-        <tr>
-          <td>Итого: 750руб.</td>
-        </tr>
-        </tr>
-      </table>
-      <a href="#">Оформить заказ</a>
+    <ul class="icon-list">
+      <li><a class="catalog-icons" href="#">Поиск</a></li>
+      <li><a class="catalog-icons" href="#">Вход</a></li>
+      <li><a class="active-icon" href="#">2 товара</a></li>
+      <div class="basket">
+        <table>
+          <tr>
+            <td>
+              <a href="#">X</a>
+            </td>
+            <td>
+              <img src="img/ice-cream/orangejam.png" width="30" height="30" alt="мороженое">
+            </td>
+            <td>
+              Пломбир с апельсиновым джемом
+            </td>
+            <td>
+              1.5кг x 200руб
+            </td>
+            <td>
+              300руб
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <a href="#">X</a>
+            </td>
+            <td>
+              <img src="img/ice-cream/whitechoc.png" width="30" height="30" alt="мороженое">
+            </td>
+            <td>
+              Клубничный пломбир с присыпкой из белого шоколада
+            </td>
+            <td>
+              1.5кг x 300руб
+            </td>
+            <td>
+              450руб
+            </td>
+          <tr>
+            <td class="price" colspan="5">Итого: 750руб.</td>
+          </tr>
+          </tr>
+        </table>
+        <a class="button" href="#">Оформить заказ</a>
     </ul>
+    </div>
   </header>
   <p>
     С 10 до 20,еждневно
     <a href="tel:88124502525">8 812 450-25-25</a>
   </p>
   <nav>
-    <ul>
+    <ul class="transition">
       <li><a href="index.html">Главная</a></li>
       <li><a href="#">Каталог</a></li>
-      <li>Сливочное</li>
+      <li class="unactive">Сливочное</li>
     </ul>
   </nav>
   <main>
     <fieldset>
-      <legend>Сливочное мороженое</legend>
+      <legend class="heading">Сливочное мороженое</legend>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
           <legend>Сортировка:</legend>
@@ -108,31 +113,31 @@
           </ul>
         </fieldset>
         <fieldset>
-        <legend>Наполнители:</legend>
-        <ul>
-        <li><input type="checkbox" name="choc" id="choc" checked>
-        <label for="choc">Шоколадные</label>
-      </li>
-        <li><input type="checkbox" name="sugar" id="sugar" checked>
-        </li>
-        <li><label for="sugar">Сахарные присыпки</label>
-        <input type="checkbox" name="fruits" id="fruits">
-      </li>
-        <li><label for="fruits">Фрукты</label>
-        <input type="checkbox" name="syrop" id="syrop">
-      </li>
-       <li><label for="syrop">Сиропы</label>
-        <input type="checkbox" name="jams" id="jams">
-      </li>
-        <li><label for="jams">Джемы</label>
-        <button type="submit">Применить</button>
-      </li>
-      </ul>
-      </fieldset>
+          <legend>Наполнители:</legend>
+          <ul>
+            <li><input type="checkbox" name="choc" id="choc" checked>
+              <label for="choc">Шоколадные</label>
+            </li>
+            <li><input type="checkbox" name="sugar" id="sugar" checked>
+            </li>
+            <li><label for="sugar">Сахарные присыпки</label>
+              <input type="checkbox" name="fruits" id="fruits">
+            </li>
+            <li><label for="fruits">Фрукты</label>
+              <input type="checkbox" name="syrop" id="syrop">
+            </li>
+            <li><label for="syrop">Сиропы</label>
+              <input type="checkbox" name="jams" id="jams">
+            </li>
+            <li><label for="jams">Джемы</label>
+              <button type="submit">Применить</button>
+            </li>
+          </ul>
+        </fieldset>
       </form>
     </fieldset>
-    <section>
-      <ul>
+    <section class="ice-cream-section">
+      <ul class="ice-cream-list">
         <li>
           <a href="#">
             <img src="img/ice-cream/orangejam.png" width="267" height="267" alt="Мороженное">
