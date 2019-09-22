@@ -336,8 +336,51 @@ footer a {
 }
 
 
+.sorting {
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: 500;
+}
 
 
+.sorting-block label {
+
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.selection {
+  background-color: #aabab0;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+}
+.selection option {
+  color: #000000;
+  font-size: 14px;
+  font-weight: 400;
+
+}
+.selection:hover,
+.selection:focus {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  font-weight: 500;
+
+}
+.price-slide {
+  background-color: #aabab0;
+}
+.sort-list {
+  background-color: #aabab0;
+}
+.catalog-button {
+  border: 2px solid #ffffff;
+  background-color: #aabab0;
+  color: #ffffff;
+}
 
 /* Ice Cream List */
 .ice-cream-list a {
@@ -362,6 +405,19 @@ footer a {
 }
 
 
+
+/* PAGE Number  */
+.page-number a {
+  font-weight: 500;
+  font-size: 14px;
+  color: #ffffff;
+  text-decoration: none;
+
+}
+.page-number .current-page {
+  color: #000000;
+  background-color:  #aabab0;
+}
 
 
 

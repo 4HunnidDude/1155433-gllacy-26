@@ -81,26 +81,28 @@
     </ul>
   </nav>
   <main>
-    <fieldset>
+    <fieldset class="sorting-block">
       <legend class="heading">Сливочное мороженое</legend>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
-          <legend>Сортировка:</legend>
-          <select name="sort" id="sort">
-            <option value="popularity">По популярности</option>
+          <legend class="sorting">Сортировка:</legend>
+          <select class="selection"  name="sort" id="sort">
+            <option class="popularity" value="popularity">По популярности</option>
             <option value="cheap">Сначала недорогие</option>
             <option value="expensive">Сначала дорогие</option>
             <option value="fatness">По жирности</option>
           </select>
         </fieldset>
-        <fieldset>
-          <legend>Цена:</legend>
+        <fieldset class="price-slide">
+          <legend class="sorting">Цена:</legend>
+          <div class="price">
           <input type="text" name="price" placeholder="100-500 руб.">
           <input type="range" name="price" id="price">
+        </div>
         </fieldset>
         <fieldset>
-          <legend>Жирность:</legend>
-          <ul>
+          <legend class="sorting">Жирность:</legend>
+          <ul class="sort-list">
             <li> <input type="radio" name="fatness" id="0%" id="fatness" value="0%">
               <label for="0">0%</label></li>
             <li> <input type="radio" name="fatness" id="to10" value="До 10%">
@@ -113,24 +115,27 @@
           </ul>
         </fieldset>
         <fieldset>
-          <legend>Наполнители:</legend>
-          <ul>
+          <legend class="sorting">Наполнители:</legend>
+          <ul class="sort-list">
             <li><input type="checkbox" name="choc" id="choc" checked>
               <label for="choc">Шоколадные</label>
             </li>
             <li><input type="checkbox" name="sugar" id="sugar" checked>
+              <label for="sugar">Сахарные присыпки</label>
             </li>
-            <li><label for="sugar">Сахарные присыпки</label>
+            </li>
+            <li>
               <input type="checkbox" name="fruits" id="fruits">
+              <label for="fruits">Фрукты</label>
             </li>
-            <li><label for="fruits">Фрукты</label>
+            <li>
               <input type="checkbox" name="syrop" id="syrop">
+              <label for="syrop">Сиропы</label>
             </li>
-            <li><label for="syrop">Сиропы</label>
+            <li>
               <input type="checkbox" name="jams" id="jams">
-            </li>
-            <li><label for="jams">Джемы</label>
-              <button type="submit">Применить</button>
+              <label for="jams">Джемы</label>
+              <button class="catalog-button" type="submit">Применить</button>
             </li>
           </ul>
         </fieldset>
@@ -302,9 +307,9 @@
             <b>420 Р<span>/кг</span></b>
           </p>
         </li>
-        <ul>
+        <ul class="page-number">
           <li><a href="#">Вперед</a></li>
-          <li><a href="#">1</a></li>
+          <li><a class="current-page" href="#">1</a></li>
           <li><a href="#">2</a></li>
           <li><a href="#">3</a></li>
           <li><a href="#">4</a></li>
