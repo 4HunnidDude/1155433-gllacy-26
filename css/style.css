@@ -74,6 +74,100 @@ a {
 }
 
 
+/* HEADING CONTENT */
+.working-time {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.working-time a {
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: bold;
+
+}
+
+.slides p {
+  font-size: 60px;
+  font-weight: bold;
+  color: #ffffff;
+
+}
+
+.slides .button {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.raspberry {
+  background-color: #620014;
+  background-image: url("../img/raspeberry.png");
+}
+
+
+.raspberry h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+
+}
+
+.raspberry p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+
+.gifted-chocolate {
+  background-color: #7f5c4d;
+  background-image: url("../img/chocolate-back.png");
+}
+
+
+.gifted-chocolate h2 {
+  font-size: 35px;
+  font-weight: bold;
+  color: #ffffff;
+
+}
+
+.gifted-chocolate p {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+
+
+
+/* Ice cream on the main page */
+
+.ice-cream-list a {
+  font-size: 16px;
+  font-weight: medium;
+  color: #ffffff;
+  text-decoration: underline;
+
+
+}
+
+.ice-cream-list b {
+  color: #ffffff;
+  font-size: 45px;
+  font-weight: bold;
+}
+
+.ice-cream-list span {
+  color: #ffffff;
+  font-size: 0.5em;
+  font-weight: bold;
+}
+
+
+
 /*  Advantages Glaccy   */
 
 
@@ -130,6 +224,41 @@ a {
   font-size: 16px;
   font-weight: 400;
 
+}
+
+/*   MAP */
+.place {
+  font-size: 14px;
+  font-weight: 400;
+  color: 323232;
+}
+
+.call-number {
+  font-size: 18px;
+  font-weight: bold;
+  color: 323232;
+}
+
+
+
+
+/* FOOTER */
+footer {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+footer a {
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: 400;
+  text-decoration: underline;
+
+}
+
+.delivers {
+  font-weight: bold;
 }
 
 
@@ -231,3 +360,9 @@ a {
   font-size: 0.5em;
   font-weight: bold;
 }
+
+
+
+
+
+
