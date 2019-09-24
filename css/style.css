@@ -1,9 +1,15 @@
 body {
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
-
-
+  color: #ffffff;
+  font-weight: 700;
 }
+img { max-width: 100% }
+a { text-decoration: none }
+html { box-sizing: border-box; }
+*, *::before, *::after { box-sizing: inherit; }
+
+
 
 li {
   list-style: none;
@@ -15,22 +21,18 @@ a {
 
 .inner-page {
 
-  background-color: skyblue;
-  background-image: url("../img/background.png");
+  background-color: #849d8f;
 }
 
-/* Header */
-
-.header {}
 
 /* Menu */
 
 
 .header-link {
   color: #ffffff;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: underline;
-  text-decoration-color: white;
+  text-decoration-color: #ffffff;
 
 }
 
@@ -44,8 +46,8 @@ a {
 
 /* ADD-Menu */
 .new {
-  color: black;
-  font-weight: bold;
+  color: #000000;
+  font-weight: 700;
   border-bottom: 1px solid #000000;
 
 }
@@ -57,7 +59,7 @@ a {
 }
 
 .add-link {
-  color: black;
+  color: #000000;
   font-size: 14px;
   font-weight: 400;
 }
@@ -78,44 +80,44 @@ a {
 .working-time {
   color: #ffffff;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .working-time a {
   color: #ffffff;
   font-size: 22px;
-  font-weight: bold;
 
 }
 
 .slides p {
   font-size: 60px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 
 }
 
 .slides .button {
-  font-weight: bold;
+  font-weight: 700;
   font-size: 32px;
 }
 
 .raspberry {
   background-color: #620014;
   background-image: url("../img/raspeberry.png");
+  background-repeat: no-repeat;
 }
 
 
 .raspberry h2 {
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 
 }
 
 .raspberry p {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -124,19 +126,20 @@ a {
 .gifted-chocolate {
   background-color: #7f5c4d;
   background-image: url("../img/chocolate-back.png");
+   background-repeat: no-repeat;
 }
 
 
 .gifted-chocolate h2 {
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 
 }
 
 .gifted-chocolate p {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -147,7 +150,7 @@ a {
 
 .ice-cream-list a {
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
   color: #ffffff;
   text-decoration: underline;
 
@@ -157,13 +160,13 @@ a {
 .ice-cream-list b {
   color: #ffffff;
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .ice-cream-list span {
   color: #ffffff;
-  font-size: 0.5em;
-  font-weight: bold;
+  font-size: 22px;
+  font-weight: 700;
 }
 
 
@@ -179,7 +182,7 @@ a {
 .advantages p {
   color: #323232;
   font-size: 24px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .advantages li {
@@ -193,6 +196,7 @@ a {
 
 
 .blog {
+  background-color: #ffffff;
   background-image: url("../img/fruits.png");
   background-repeat: no-repeat;
 
@@ -201,13 +205,13 @@ a {
 .blog h3 {
   color: #323232;
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .blog a {
   color: #323232;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: underline;
 }
 
@@ -230,13 +234,13 @@ a {
 .place {
   font-size: 14px;
   font-weight: 400;
-  color: 323232;
+  color: #323232;
 }
 
 .call-number {
   font-size: 18px;
-  font-weight: bold;
-  color: 323232;
+  font-weight: 700;
+  color: #323232;
 }
 
 
@@ -251,14 +255,12 @@ footer {
 
 footer a {
   color: #ffffff;
-  font-size: 13px;
-  font-weight: 400;
   text-decoration: underline;
 
 }
 
 .delivers {
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
@@ -271,7 +273,7 @@ footer a {
 
   color: #ffffff;
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 700;
   text-decoration: underline;
 }
 
@@ -293,7 +295,7 @@ footer a {
   color: #000000;
   background-color: #ffffff;
   font-size: 14px;
-  font-weight: medium;
+  font-weight: 500;
 }
 
 .basket {
@@ -301,12 +303,12 @@ footer a {
 }
 
 .price {
-  border-top: 1px solid black;
+  border-top: 1px solid #000000;
 }
 
 .button {
   font-size: 18px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
   background-color: #e84d36;
 }
@@ -331,7 +333,7 @@ footer a {
 
 .heading {
   font-size: 35px;
-  font-weight: bold;
+  font-weight: 700;
   color: #ffffff;
 }
 
@@ -385,7 +387,7 @@ footer a {
 /* Ice Cream List */
 .ice-cream-list a {
   font-size: 16px;
-  font-weight: medium;
+  font-weight: 500;
   color: #ffffff;
   text-decoration: underline;
 
@@ -395,13 +397,13 @@ footer a {
 .ice-cream-list b {
   color: #ffffff;
   font-size: 45px;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 .ice-cream-list span {
   color: #ffffff;
   font-size: 0.5em;
-  font-weight: bold;
+  font-weight: 700;
 }
 
 
