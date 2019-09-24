@@ -10,22 +10,21 @@ html { box-sizing: border-box; }
 *, *::before, *::after { box-sizing: inherit; }
 
 
-
-li {
-  list-style: none;
-}
-
 a {
   text-decoration: none;
 }
 
 .inner-page {
-
+ list-style: none;
   background-color: #849d8f;
 }
 
 
 /* Menu */
+header li{
+   list-style: none;
+
+}
 
 
 .header-link {
@@ -49,6 +48,7 @@ a {
   color: #000000;
   font-weight: 700;
   border-bottom: 1px solid #000000;
+   list-style: none;
 
 }
 
@@ -56,6 +56,7 @@ a {
   border: 1px solid #ffffff;
   background-color: #ffffff;
   border-radius: 5px;
+   list-style: none;
 }
 
 .add-link {
@@ -73,6 +74,7 @@ a {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
+   list-style: none;
 }
 
 
@@ -88,7 +90,9 @@ a {
   font-size: 22px;
 
 }
-
+.slides {
+   list-style: none;
+}
 .slides p {
   font-size: 60px;
   font-weight: 700;
@@ -147,7 +151,10 @@ a {
 
 
 /* Ice cream on the main page */
+.ice-cream-list{
+ list-style: none;
 
+}
 .ice-cream-list a {
   font-size: 16px;
   font-weight: 500;
@@ -177,6 +184,7 @@ a {
 .advantages {
   background-color: #fbded8;
   background-image: url("../img/waffle.png");
+  
 }
 
 .advantages p {
@@ -189,6 +197,8 @@ a {
   color: #323232;
   font-weight: 400;
   font-size: 14px;
+   list-style: none;
+  
 
 }
 
@@ -258,7 +268,9 @@ footer a {
   text-decoration: underline;
 
 }
-
+ footer li {
+   list-style: none;
+ }
 .delivers {
   font-weight: 700;
 }
@@ -269,6 +281,8 @@ footer a {
 
 
 /* Header */
+
+
 .nav-catalog a {
 
   color: #ffffff;
@@ -316,6 +330,12 @@ footer a {
 
 
 /*     SORT-Catalog */
+main li {
+   list-style: none;
+}
+.transition li {
+   list-style: none;
+}
 .transition a {
   font-size: 14px;
   font-weight: 400;
@@ -338,11 +358,13 @@ footer a {
 }
 
 
+}
 .sorting {
 	color: #ffffff;
 	font-size: 14px;
 	font-weight: 500;
 }
+
 
 
 .sorting-block label {
