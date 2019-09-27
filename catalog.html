@@ -10,23 +10,24 @@
 </head>
 
 <body class="inner-page">
-  <header class="catalog-header">
-    <a href="index.html">
-      <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Glacy">
-    </a>
-    <nav class="nav-catalog">
-      <ul>
-        <li><a class="catalog-active" href="#">Каталог</a></li>
-        <li><a href="#">Доставка и оплата</a></li>
-        <li><a href="#">О Компании</a></li>
-      </ul>
-    </nav>
-    <ul class="icon-list">
-      <li><a class="catalog-icons" href="#">Поиск</a></li>
-      <li><a class="catalog-icons" href="#">Вход</a></li>
-      <li><a class="active-icon" href="#">2 товара</a></li>
-      <div class="basket">
-        <table>
+  <div class="layout_positioner">
+    <header class="header">
+      <a href="index.html">
+        <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Glacy">
+      </a>
+      <nav class="nav-catalog">
+        <ul class="menu">
+          <li><a class="catalog-active" href="#">Каталог</a></li>
+          <li><a class="header-link" href="#">Доставка и оплата</a></li>
+          <li><a class="header-link" href="#">О Компании</a></li>
+        </ul>
+      </nav>
+      <ul class="icon-list functional-icons">
+        <li><a class="catalog-icons header-icon" href="#">Поиск</a></li>
+        <li><a class="catalog-icons header-icon" href="#">Вход</a></li>
+        <li><a class="active-icon header-icon" href="#">2 товара</a></li>
+        <div class="basket">
+          <!--  <table>
           <tr>
             <td>
               <a href="#">Удалить из корзины</a>
@@ -66,27 +67,28 @@
           </tr>
         </table>
         <a class="button" href="#">Оформить заказ</a>
-    </ul>
+    </ul> -->
+        </div>
+    </header>
+    <div class="flex-time">
+      <p class="timing">
+        <span class="graphic">С 10 до 20,еждневно</span>
+        <a class="phone-number" href="tel:88124502525">8 812 450-25-25</a>
+      </p>
+      <ul class="transition">
+        <li><a href="index.html">Главная</a></li>
+        <li><a href="#">Каталог</a></li>
+        <li class="unactive">Сливочное</li>
+      </ul>
+      <h1 class="heading">Сливочное мороженое</h1>
     </div>
-  </header>
-  <p>
-    С 10 до 20,еждневно
-    <a href="tel:88124502525">8 812 450-25-25</a>
-  </p>
-  <nav>
-    <ul class="transition">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li class="unactive">Сливочное</li>
-    </ul>
-  </nav>
-  <main>
-    <fieldset class="sorting-block">
-      <legend class="heading">Сливочное мороженое</legend>
+  </div>
+  <div class="layout_positioner">
+    <main>
       <form action="https://echo.htmlacademy.ru/" method="post">
         <fieldset>
           <legend class="sorting">Сортировка:</legend>
-          <select class="selection"  name="sort" id="sort">
+          <select class="selection" name="sort" id="sort">
             <option class="popularity" value="popularity">По популярности</option>
             <option value="cheap">Сначала недорогие</option>
             <option value="expensive">Сначала дорогие</option>
@@ -96,9 +98,9 @@
         <fieldset class="price-slide">
           <legend class="sorting">Цена:</legend>
           <div class="price">
-          <input type="text" name="price" placeholder="100-500 руб.">
-          <input type="range" name="price" id="price">
-        </div>
+            <input type="text" name="price" placeholder="100-500 руб.">
+            <input type="range" name="price" id="price">
+          </div>
         </fieldset>
         <fieldset>
           <legend class="sorting">Жирность:</legend>
@@ -140,202 +142,217 @@
           </ul>
         </fieldset>
       </form>
-    </fieldset>
-    <section class="ice-cream-section">
-      <ul class="ice-cream-list">
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/orangejam.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <a href="#">
-            Сливочное с апельсиновым
-            джемом и цитрусовой стружкой.
-          </a>
-          <p>
-            <b>310 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/coffechoc.png" width="267" height="267" alt="Мороженное">
-            <p>
+      </fieldset>
+      <section class="ice-cream-section">
+          <ul class="ice-cream-list">
+             <div class="ice-cream-flex">
+            <li>
               <a href="#">
-                Сливочно-кофейное с кусочками
-                шоколода.
+                <img src="img/ice-cream/orangejam.png" width="267" height="267" alt="Мороженное">
               </a>
-            </p>
-            <p>
-              <b>380 Р<span>/кг</span></b>
-            </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/whitechoc.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочно-клубничное с
-              присыпкой из белого шоколада.
-            </a>
-          </p>
-          <p>
-            <b>355 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/carcream.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочный крем-брюле с
-              карамельной подливкой.
-            </a>
-          </p>
-          <p>
-            <b>415 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream1/brusjam.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочное с брусничным
-              джемом.
-            </a>
-          </p>
-          <p>
-            <b>325 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream1/blackberry.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочно-черничное с цельными
-              ягодами черники.
-            </a>
-          </p>
-          <p>
-            <b>410 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream1/lemonrain.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочно-лимонное с
-              карамельной присыпкой.
-            </a>
-          </p>
-          <p>
-            <b>375 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream1/chococream.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочное с шоколадной
-              стружкой.
-            </a>
-          </p>
-          <p>
-            <b>415 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream2/chocvanil.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочное-ванильное с
-              кусочками шоколада.
-            </a>
-          </p>
-          <p>
-            <b>440 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream2/mentolsyr.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочное с ментоловым
-              сиропом.
-            </a>
-          </p>
-          <p>
-            <b>355 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream2/blackchoc.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              Сливочное с кусочками черного
-              шоколада.
-            </a>
-          </p>
-          <p>
-            <b>355 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <li>
-          <a href="#">
-            <img src="img/ice-cream/ice-cream2/slivmint.png" width="267" height="267" alt="Мороженное">
-          </a>
-          <p>
-            <a href="#">
-              сливочное с мятным сиропом
-            </a>
-          </p>
-          <p>
-            <b>420 Р<span>/кг</span></b>
-          </p>
-        </li>
-        <ul class="page-number">
-          <li><a href="#">Вперед</a></li>
-          <li><a class="current-page" href="#">1</a></li>
-          <li><a href="#">2</a></li>
-          <li><a href="#">3</a></li>
-          <li><a href="#">4</a></li>
-          <li><a href="#">5</a></li>
-          <li><a href="#">Назад</a></li>
-        </ul>
-    </section>
-  </main>
-  <footer>
-    <div>
-      <ul>
-        <li><a target="blank" href="twitter.com">Твиттер</a></li>
-        <li><a target="blank" href="instagram.com">Инстаграм</a></li>
-        <li><a target="blank" href="facebook.com">Фэйсбук</a></li>
-        <li><a target="blank" href="vkontakte.ru">Вконтакте</a></li>
-      </ul>
-      <ul>
-        <li><a class="delivers" href="#">Для поставщиков</a></li>
-        <li><a href="#">О производстве</a></li>
-        <li><a href="#">Наши документы</a></li>
-        <li><a href="#">Экологические стандарты</a></li>
-      </ul>
-      <a href="index.html"><img src="img/svg-gllacy/logo-htmlacademy.svg" width="109" height="40" alt="HTML-Academy"></a>
-      <p>Сделанно в <a target="blank" href="https://htmlacademy.ru/">HTML Academy</a> 2019</p>
-    </div>
-  </footer>
+              <p>
+                <a href="#">
+                  Сливочное с апельсиновым
+                  джемом и цитрусовой стружкой.
+                </a>
+              </p>
+              <p>
+                <b>310 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/coffechoc.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочно-кофейное с кусочками
+                  шоколода.
+                </a>
+              </p>
+              <p>
+                <b>380 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/whitechoc.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочно-клубничное с
+                  присыпкой из белого шоколада.
+                </a>
+              </p>
+              <p>
+                <b>355 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/carcream.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочный крем-брюле с
+                  карамельной подливкой.
+                </a>
+              </p>
+              <p>
+                <b>415 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream1/brusjam.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочное с брусничным
+                  джемом.
+                </a>
+              </p>
+              <p>
+                <b>325 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream1/blackberry.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочно-черничное с цельными
+                  ягодами черники.
+                </a>
+              </p>
+              <p>
+                <b>410 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream1/lemonrain.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочно-лимонное с
+                  карамельной присыпкой.
+                </a>
+              </p>
+              <p>
+                <b>375 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream1/chococream.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочное с шоколадной
+                  стружкой.
+                </a>
+              </p>
+              <p>
+                <b>415 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream2/chocvanil.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочное-ванильное с
+                  кусочками шоколада.
+                </a>
+              </p>
+              <p>
+                <b>440 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream2/mentolsyr.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочное с ментоловым
+                  сиропом.
+                </a>
+              </p>
+              <p>
+                <b>355 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream2/blackchoc.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  Сливочное с кусочками черного
+                  шоколада.
+                </a>
+              </p>
+              <p>
+                <b>355 Р<span>/кг</span></b>
+              </p>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/ice-cream/ice-cream2/slivmint.png" width="267" height="267" alt="Мороженное">
+              </a>
+              <p>
+                <a href="#">
+                  сливочное с мятным сиропом
+                </a>
+              </p>
+              <p>
+                <b>420 Р<span>/кг</span></b>
+              </p>
+            </li>
+          </div>
+          </ul>
+            <ul class="page-number">
+              <li><a href="#">Вперед</a></li>
+              <li><a class="current-page" href="#">1</a></li>
+              <li><a href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#">4</a></li>
+              <li><a href="#">5</a></li>
+              <li><a href="#">Назад</a></li>
+            </ul>
+      </section>
+    </main>
+    <footer>
+      <div class="layout_positioner">
+        <footer>
+          <div class="footer-flex">
+            <ul class="social-media">
+              <li><a target="blank" href="twitter.com">Твиттер</a></li>
+              <li><a target="blank" href="instagram.com">Инстаграм</a></li>
+              <li><a target="blank" href="facebook.com">Фэйсбук</a></li>
+              <li><a target="blank" href="vkontakte.ru">Вконтакте</a></li>
+            </ul>
+            <div class="footer-info">
+              <ul>
+                <li><a class="delivers" href="#">Для поставщиков</a></li>
+                <li><a href="#">О производстве</a></li>
+              </ul>
+              <ul>
+                <li><a href="#">Наши документы</a></li>
+                <li><a href="#">Экологические стандарты</a></li>
+              </ul>
+            </div>
+            <div class="flex-made">
+              <a class="logo-footer" href="#"><img src="img/svg-gllacy/logo-htmlacademy.svg" width="108" height="39" alt="HTML-Academy"></a>
+              <p class="made-phrase">Сделанно в <a target="blank" href="https://htmlacademy.ru/">HTML Academy</a> 2019</p>
+            </div>
+          </div>
+        </footer>
 </body>
+</div>
 
 </html>

@@ -87,8 +87,9 @@ header li {
 .header-icon {
   margin-left: 10px;
   color: #ffffff;
-  font-size: 16px;
-  font-weight: 400;
+  background-color: #b0c0b7;
+  font-size: 14px;
+  font-weight: 500;
   list-style: none;
 }
 
@@ -396,7 +397,7 @@ footer li {
   color: #ffffff;
   background-color: #b0c0b7;
   font-size: 14px;
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .active-icon {
@@ -428,7 +429,41 @@ main li {
   list-style: none;
 }
 
+.flex-time {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.timing {
+  display: flex;
+  flex-direction: column;
+  order: 1;
+  font-size: 14px;
+  font-weight: bold;
+
+
+}
+
+.graphic {
+  align-self: flex-end;
+  margin-bottom: 9px;
+}
+
+.timing .phone-number {
+  font-size: 22px;
+}
+
+.transition {
+  padding: 0;
+  margin-top: auto;
+  order: -1;
+  height: auto;
+}
+
 .transition li {
+  display: inline-block;
   list-style: none;
 }
 
@@ -448,9 +483,14 @@ main li {
 }
 
 .heading {
+  order: 2;
+  width: 1000px;
   font-size: 35px;
   font-weight: 700;
   color: #ffffff;
+  height: auto;
+  margin: 0;
+
 }
 
 
@@ -509,6 +549,20 @@ main li {
 }
 
 /* Ice Cream List */
+.ice-cream-flex {
+  display: flex;
+  position: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.ice-cream-list li {
+  width: 267px;
+  padding-left: 26px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
 .ice-cream-list a {
   font-size: 16px;
   font-weight: 500;
