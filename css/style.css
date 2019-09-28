@@ -197,7 +197,7 @@ header li {
 
 
 /* Ice cream on the main page */
-.ice-cream-list {
+.ice-cream-main {
   list-style: none;
 
 }
@@ -554,6 +554,10 @@ main li {
   position: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+}
+.ice-cream-list {
+  list-style: none;
+  padding: 0;
 }
 .ice-cream-list li {
   width: 267px;
