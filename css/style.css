@@ -540,6 +540,12 @@ main li {
 
 
 }
+/* SORT */
+.sort-flexbox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
 
 .sorting {
   color: #ffffff;
@@ -638,6 +644,16 @@ main li {
 
 
 /* PAGE Number  */
+.page-number {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+
+}
+.page-number li {
+margin-left: 22px;
+}
 .page-number a {
   font-weight: 500;
   font-size: 14px;
