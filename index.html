@@ -10,8 +10,7 @@
 </head>
 
 <body class="inner-page">
-  <div class="layout_positioner">
-    <header class="header">
+    <header class="header layout_positioner">
       <a>
         <img src="img/svg-gllacy/logo.svg" width="154" height="64" alt="Логотип магазина Glacy">
       </a>
@@ -47,7 +46,7 @@
       </ul>
     </header>
     <main>
-      <div>
+       <div class="layout_positioner">
         <p class="working-time">
           С 10 до 20,еждневно
           <a href="tel:88124502525">8 812 450-25-25</a>
@@ -59,12 +58,12 @@
               с малиновым джемом</p>
             <a class="button" href="#">Давайте оба!</a>
           </li>
-          <li>
+          <li style="display: none;">
             <img src="img/ice-cream/slides/chocslide.png" width="1045" height="881" alt="Слайд 2">
             <p>Шоколадный пломбир и лимонный сорбет</p>
             <a class="button" href="#">Давайте оба!</a>
           </li>
-          <li>
+          <li style="display: none;">
             <img src="img/ice-cream/slides/pomadeslide.png" width="1045" height="881" alt="Слайд 3">
             <p>пломбир с помадкой и клубничный щербет</p>
             <a class="button" href="#">Давайте оба!</a>
@@ -75,7 +74,7 @@
         <input type="radio" name="Slide" value="slide2">
         <input type="radio" name="Slide" value="slide3">
       </form> -->
-      </div>
+      <div class="berries-box layout_positioner">
       <section class="raspberry">
         <h2>Малинка даром!</h2>
         <p>При покупке 2кг любого фруктового мороженого, добавим в ваш заказ банку малинового варенья бесплатно.</p>
@@ -86,8 +85,9 @@
         <p>при покупке 2кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.</p>
         <a class="button" href="#">Хочу шоколадки!</a>
       </section>
-      <section>
-        <ul class="ice-cream-main">
+    </div>
+      <section class="layout_positioner">
+        <ul class="ice-cream-main ice-cream-flex">
           <li>
             <a href="#">
               <img src="img/ice-cream/orangejam.png" width="267" height="267" alt="Мороженное">
@@ -146,19 +146,19 @@
           </li>
         </ul>
       </section>
-      <div class="sections-flex">
+      <div class="sections-container">
         <section class="advantages">
           <p>
             Магазин Глэйси-это онлайн- и офлайн магазин по продаде мороженого собственного производства и на развес
           </p>
-          <ul>
-            <li>
+          <ul class="advantages-list">
+            <li class="first-block first-line">
               Все наше мороженое изготавливается на собственном производсте, с использованием современного оборудования и проверенных временем технологий.
             </li>
-            <li>
+            <li class="first-line">
               Закупка ингредиентов производится только у проверенных фермерских хозяйств и компаний, с которыми нас связывает долговременное сотрудничество.
             </li>
-            <li>Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
+            <li class="first-block">Для приготовления мороженого используется настоящие сливки и молоко высочайшего качества. Все дополнительные ингредиенты и добавки произведены из натурального,экологически чистого сырья.</li>
             <li>Доставка нашего мороженого до заказчиков осуществляется в специальном темопаке.который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</li>
           </ul>
         </section>
@@ -174,10 +174,11 @@
           </form>
         </article>
       </div>
-  </div>
+    </div>
+    <div class="container-map">
   <article class="adress-info">
     <img src="img/map/mapfooter.png" width="1200" height="430" alt="карта">
-    <div class="palce">
+    <div class="place">
       <p>
         Адрес главного офиса и офлайн-магазина
         <b>Ул.Большая Конюшенная
@@ -191,6 +192,7 @@
       </form>
     </div>
   </article>
+</div>
   <!--  <section>
     <h2>Мы обязательно вам ответим!</h2>
     <form action="https://echo.htmlacademy.ru/" method="post">
@@ -202,8 +204,7 @@
     </form>
   </section> -->
   </main>
-  <div class="layout_positioner">
-    <footer>
+    <footer class="layout_positioner">
       <div class="footer-flex">
         <ul class="social-media">
           <li><a target="blank" href="twitter.com">Твиттер</a></li>
@@ -227,7 +228,6 @@
         </div>
       </div>
     </footer>
-  </div>
 </body>
 
 </html>

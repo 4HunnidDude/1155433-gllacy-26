@@ -38,6 +38,10 @@ a {
   margin: 0 auto;
   padding: 10px 26px;
 }
+.container-map {
+  width: 1200px;
+  margin: 0 auto;
+}
 
 
 /* Menu */
@@ -124,6 +128,9 @@ header li {
 
 /* HEADING CONTENT */
 .working-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
   color: #ffffff;
   font-size: 14px;
   font-weight: 700;
@@ -150,11 +157,20 @@ header li {
   font-weight: 700;
   font-size: 32px;
 }
+.berries-box {
+  display: flex;
+  flex-direction: row;
+
+
+
+}
 
 .raspberry {
   background-color: #620014;
   background-image: url("../img/raspeberry.png");
   background-repeat: no-repeat;
+  width: 560px;
+  margin-right:25px ;
 }
 
 
@@ -177,6 +193,7 @@ header li {
   background-color: #7f5c4d;
   background-image: url("../img/chocolate-back.png");
   background-repeat: no-repeat;
+    width: 560px;
 }
 
 
@@ -199,25 +216,33 @@ header li {
 /* Ice cream on the main page */
 .ice-cream-main {
   list-style: none;
+  padding: 0;
+  margin: 0 -13px;
 
 }
+.ice-cream-main li {
+ width: 267px;
+  text-align: center;
+  margin: 0 13px 40px;
+}
 
-.ice-cream-list a {
+.ice-cream-main a {
+  list-style: none;
   font-size: 16px;
   font-weight: 500;
   color: #ffffff;
   text-decoration: underline;
 
-
 }
 
-.ice-cream-list b {
+
+.ice-cream-main b {
   color: #ffffff;
   font-size: 45px;
   font-weight: 700;
 }
 
-.ice-cream-list span {
+.ice-cream-main span {
   color: #ffffff;
   font-size: 22px;
   font-weight: 700;
@@ -226,7 +251,7 @@ header li {
 
 
 /*  Advantages Glaccy   */
-.sections-flex {
+.sections-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -240,6 +265,13 @@ header li {
   margin-bottom: 40px;
 
 }
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 30px 21px 27px 21px;
+
+}
 
 .advantages p {
   color: #323232;
@@ -247,12 +279,20 @@ header li {
   font-weight: 500;
 
 }
+.advantages .first-block {
+  margin-right: 26px;
+}
+.advantages .first-line {
+  margin-bottom: 35px;
+}
 
 .advantages li {
   color: #323232;
   font-weight: 400;
   font-size: 14px;
   list-style: none;
+  width: 475px;
+  
 
 
 }
@@ -300,6 +340,11 @@ header li {
 }
 
 /*   MAP */
+.adress-info {
+padding: 0;
+margin: 0;
+
+}
 .place {
   font-size: 14px;
   font-weight: 400;
@@ -551,19 +596,21 @@ main li {
 /* Ice Cream List */
 .ice-cream-flex {
   display: flex;
-  position: row;
+  flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
 }
+
 .ice-cream-list {
   list-style: none;
   padding: 0;
+  margin: 0 -13px;
 }
+
 .ice-cream-list li {
   width: 267px;
-  padding-left: 26px;
   text-align: center;
-  margin-bottom: 40px;
+  margin: 0 13px 40px;
 }
 
 
