@@ -86,7 +86,7 @@
   <main class="layout_positioner">
     <form action="https://echo.htmlacademy.ru/" method="post">
       <div class="sort-flexbox">
-        <div>
+        <div class="price-rate">
           <fieldset>
             <legend class="sorting">Сортировка:</legend>
             <select class="selection" name="sort" id="sort">
@@ -97,16 +97,13 @@
             </select>
           </fieldset>
         </div>
-        <div>
+        <div class="price-range">
           <fieldset class="price-slide">
-            <legend class="sorting">Цена:</legend>
-            <div class="price">
-              <input type="text" name="price" placeholder="100-500 руб.">
-              <input type="range" name="price" id="price">
-            </div>
+            <legend class="sorting">Цена: 100-500 руб.</legend>
+            <input type="range" name="price" id="price">
           </fieldset>
         </div>
-        <div>
+        <div class="fatness">
           <fieldset>
             <legend class="sorting">Жирность:</legend>
             <ul class="sort-list">
@@ -122,7 +119,7 @@
             </ul>
           </fieldset>
         </div>
-        <div>
+        <div class="fillers">
           <fieldset>
             <legend class="sorting">Наполнители:</legend>
             <ul class="sort-list">
@@ -144,12 +141,13 @@
               <li>
                 <input type="checkbox" name="jams" id="jams">
                 <label for="jams">Джемы</label>
-                <button class="catalog-button" type="submit">Применить</button>
               </li>
             </ul>
           </fieldset>
         </div>
-      </div>
+        <button class="sort-butn catalog-button" type="submit">Применить</button>
+    </form>
+    </div>
     </form>
     </fieldset>
     <section class="ice-cream-section">
